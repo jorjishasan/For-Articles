@@ -40,4 +40,17 @@ html {
   height: 100vh;
   margin: 0 auto;
   gap: 10%;
+  .count {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2.8rem;
+  }
+  img {
+    display: block;
+    width: 400px;
+    height: 600px;
+    object-fit: cover;
+  }
 }
