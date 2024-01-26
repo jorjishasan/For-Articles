@@ -6,3 +6,7 @@ import RandomImage from "./components/RandomImage";
 const App = () => {
   return <RandomImage />;
 };
+
+const root = ReactDOM.createRoot(document.getElementById("root"));
+
+root.render(<App />);
