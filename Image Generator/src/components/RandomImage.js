@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { UNSPLASH_API, randomNum } from "../utils";
+import "../style/RandomImage.scss";
 
 const RandomImage = () => {
   const [imgUrl, setImgUrl] = useState("");
