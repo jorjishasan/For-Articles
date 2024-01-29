@@ -11,7 +11,7 @@ const RandomImage = () => {
   }, [count]);
 
   const getData = async () => {
-    const response = await fetch("https://corsproxy.io/?" + UNSPLASH_API);
+    const response = await fetch(UNSPLASH_API);
     const data = await response.json();
     setImgUrl(data[randomNum(0, 10)]?.urls?.small);
   };

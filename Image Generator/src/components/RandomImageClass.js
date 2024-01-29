@@ -1,5 +1,6 @@
 import { Component } from "react";
-
+import { UNSPLASH_API, randomNum } from "../utils";
+import "../style/RandomImage.scss";
 class RandomImageClass extends Component {
   constructor(props) {
     super(props);
@@ -10,7 +11,22 @@ class RandomImageClass extends Component {
     };
   }
 
-  //   async componentDidMount() {}
+  componentDidMount() {
+    this.getData();
+  }
+
+  componentDidUpdate(prevProps, prevState) {
+    if (this.state.count !== prevState.count) {
+      this.getData();
+    }
+  }
+
+  getData = async () => {
+    const response = await fetch(UNSPLASH_API);
+    const data = await response.json();
+    this.setState({ imgUrl: data[randomNum(0, 10)]?.urls?.small });
+  };
+
   render() {
     return (
       <div className="container">
