@@ -1,0 +1,19 @@
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 2.4rem 4rem;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); // Add minimal shad
+  img {
+    width: 48px;
+  }
+  ul {
+    list-style: none;
+    display: flex;
+    gap: 3.2rem;
+    font-size: 2rem;
+    li {
+      cursor: pointer;
+    }
+  }
+}
