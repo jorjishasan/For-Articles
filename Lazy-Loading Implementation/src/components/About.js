@@ -1,7 +1,11 @@
 import "../styles/About.scss";
 
 const About = () => {
-  return <h1>This is About page...</h1>;
+  return (
+    <div className="about">
+      <h1>About Page..</h1>
+    </div>
+  );
 };
 
 export default About;
