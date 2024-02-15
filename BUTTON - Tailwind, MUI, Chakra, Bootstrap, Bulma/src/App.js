@@ -24,7 +24,35 @@ const InStyledComponent = () => {
   return <StyledButton>Button</StyledButton>;
 };
 
+// In materialUI
+import { Button } from "@mui/material";
+
+const InMaterialUi = () => {
+  return (
+    <Button
+      sx={{
+        fontFamily: "inherit",
+        backgroundColor: "#fff",
+        color: "#1f1f1f",
+        border: "1px solid #1f1f1f",
+        borderRadius: "7px",
+        fontSize: "32px",
+        cursor: "pointer",
+        transitionDuration: "0.3s",
+        padding: "20px 48px",
+        "&:hover": {
+          backgroundColor: "#9747ff",
+          color: "#fff",
+          borderColor: "#9747ff",
+        },
+      }}
+    >
+      Button
+    </Button>
+  );
+};
+
 //Render Process
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
-root.render(<InStyledComponent />);
+root.render(<InMaterialUi />);
