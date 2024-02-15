@@ -51,6 +51,7 @@ const InMaterialUi = () => {
     </Button>
   );
 };
+
 // In Bootstrap
 import "bootstrap/dist/css/bootstrap.min.css";
 
@@ -58,7 +59,16 @@ const InBootstrap = () => {
   return <button className="btn btn-custom">Button</button>;
 };
 
+//In Tailwind
+const InTailwind = () => {
+  return (
+    <button className="text-[#1f1f1f] px-[48px] py-[20px] text-[32px] cursor-pointer border rounded-[7px] transition-colors duration-300 hover:bg-[#9747ff] hover:text-[#fff]">
+      Button
+    </button>
+  );
+};
+
 //Render Process
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
-root.render(<InBootstrap />);
+root.render(<InTailwind />);
