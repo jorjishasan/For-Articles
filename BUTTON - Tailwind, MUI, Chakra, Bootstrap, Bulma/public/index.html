@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>A Button in almost all style framework.</title>
+    <style>
+      *,
+      *::after,
+      *::before {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        display: grid;
+        place-items: center;
+        height: 100vh;
+      }
+      .btn-custom {
+        font-family: inherit;
+        background-color: #fff;
+        border: 1px solid #1f1f1f;
+        border-radius: 7px;
+        font-size: 32px;
+        cursor: pointer;
+        transition-duration: 0.3s;
+        padding: 20px 48px;
+      }
+
+      .btn-custom:hover {
+        background-color: #9747ff;
+        color: #fff;
+        border-color: #9747ff;
+      }
+    </style>
+    <link href="../src/index.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div id="root">
+      <h1>Not Render!</h1>
+    </div>
+    <script type="module" src="../src/App.js"></script>
+  </body>
+</html>
