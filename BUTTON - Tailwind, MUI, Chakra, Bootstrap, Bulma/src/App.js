@@ -51,8 +51,14 @@ const InMaterialUi = () => {
     </Button>
   );
 };
+// In Bootstrap
+import "bootstrap/dist/css/bootstrap.min.css";
+
+const InBootstrap = () => {
+  return <button className="btn btn-custom">Button</button>;
+};
 
 //Render Process
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
-root.render(<InMaterialUi />);
+root.render(<InBootstrap />);
