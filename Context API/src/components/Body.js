@@ -1,11 +1,10 @@
 import { useContext } from "react";
 import StatusContext from "../contexts/StatusContext";
 
-const Header = () => {
+const Body = () => {
   const { status, setStatus } = useContext(StatusContext);
-  console.log(status);
   return (
-    <header className="h-[30vh] bg-blue-100 flex items-center justify-center">
+    <main className="h-[40vh] bg-green-100 flex items-center justify-center">
       <div className="text-center">
         <input
           type="text"
@@ -13,10 +12,10 @@ const Header = () => {
           className="border border-gray-500 rounded-md p-2"
           onChange={(e) => setStatus(e.target.value)}
         />
-        <p className="mt-2">Doing What ?: {status}</p>
+        <p className="mt-2">Doing what ?: {status}</p>
       </div>
-    </header>
+    </main>
   );
 };
 
-export default Header;
+export default Body;
