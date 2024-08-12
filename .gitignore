@@ -1,1 +1,25 @@
+# macOS specific files
 .DS_Store
+
+# Node modules
+node_modules/
+
+# Parcel cache
+.parcel-cache/
+
+# Log files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment variables
+.env
+
+# Dist folder
+dist/
+
+# Editor directories and files
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
